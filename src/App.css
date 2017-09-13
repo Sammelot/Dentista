@@ -1,21 +1,91 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+
+  .ant-carousel .slick-slide {
+
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+    width: 118px;
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+
+
+  .video
+{
+position:relative;
+  z-index:9999;
+
+
+
+}
+.vi {
+
+  /*display: table-cell;*/
+  position: absolute;
+  top:20%;
+  left:32%;
+  vertical-align: middle;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.boton{
+
+  position: absolute;
+  top:40%;
+  left: 47%;
+  vertical-align: middle;
+  opacity: 50%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.vi h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 2s;
+  animation-direction: left;
+  font-size: 100px;
+
+
+}
+.logodos {
+
+width: 40%;
+ height: 40%;
+ margin:10px auto;
+ display:block;
+ -webkit-animation: 3s rotate linear infinite;
+ animation: 3s rotate linear 3s;
+ -webkit-transform-origin: 50% 50%;
+ transform-origin: 50% 50%;
 }
 
-.App-intro {
-  font-size: large;
+@keyframes slidein {
+  from {
+    margin-left:20000%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes App-logo-spin {
