@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@@import '~antd/dist/antd.css';
 
 
   .ant-carousel .slick-slide {
@@ -28,42 +28,52 @@ position:relative;
 
   /*display: table-cell;*/
   position: absolute;
-  top:20%;
-  left:32%;
+  top: 60%;
+  left: 10%;
   vertical-align: middle;
 
 }
 
-.boton{
-
-  position: absolute;
-  top:40%;
-  left: 47%;
-  vertical-align: middle;
-  opacity: 50%;
-}
-
-.vi h1 {
+.vi h2 {
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: 2s;
   animation-direction: left;
-  font-size: 100px;
+  font-size:60px;
+  color: white;
+  opacity: 0.6;
 
+
+}
+
+.vidos{
+  /*display: table-cell;*/
+  position: absolute;
+  top:5%;
+  left: 10%;
+  vertical-align: middle;
 
 }
 .logodos {
 
-width: 40%;
- height: 40%;
+width: 30%;
+ height: 30%;
  margin:10px auto;
  display:block;
  -webkit-animation: 3s rotate linear infinite;
  animation: 3s rotate linear 3s;
  -webkit-transform-origin: 50% 50%;
  transform-origin: 50% 50%;
+   opacity: 0.7;
 }
+.vi bu{
 
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  vertical-align: middle;
+
+}
 @keyframes slidein {
   from {
     margin-left:20000%;
@@ -82,11 +92,6 @@ width: 40%;
   to {-webkit-transform: rotate(360deg);}}
 
 
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-//import './App.css';
-import HomePage from './components/HomePage';
 import Nav from './components/principal/Nav';
+//import Footer from './components/principal/Footer';
+import Routes from './Routes';
+import {Link, NavLink} from 'react-router-dom';
+
+
+
 
 class App extends Component {
-  render() {
-    return (
-      <div >
+    render() {
 
-        <Nav/>
-        <HomePage/>
 
-      </div>
-    );
-  }
+
+  return (
+            <div>
+                <Nav/>
+                <div >
+
+
+                        <Routes/>
+
+              
+                    </div>
+                </div>
+
+        );
+    }
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button } from 'antd';
+import {Row, Col} from 'antd';
 import elvideo  from './principal/imagenes/video.mp4';
 import  '../App.css' ;
 
@@ -18,16 +18,14 @@ class Background extends Component{
 
                 <div className= "vi">
 
-    <h1> Bienvenidos </h1>
 
-                {/* }<img src={require ('../components/principal/imagenes/diente.png')} className="logodos" /> */}
-
-
-
+                  <h2 style={{textAlign:"center"}}> Creando las más bellas sonrisas </h2>
               </div>
-<div>
-            <Button className= "boton" type="primary">Conocenos</Button>
-</div>
+
+              <div className="vidos">
+
+<img src={require ('../components/principal/imagenes/diente.png')} className="logodos" />
+              </div>
 
 
                   </div>
